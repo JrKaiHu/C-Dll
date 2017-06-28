@@ -19,13 +19,15 @@ class PROFILE(Structure):
                 ("szAge", c_char * 20)]
 
 class PARAMETER(Structure):
-    _fields_ = [ ("SUB_PARA1", SUB_PARA1),
+    _fields_ = [ ("type", c_int),
+                 ("SUB_PARA1", SUB_PARA1),
                  ("SUB_PARA2", SUB_PARA2),
                  ("SUB_PARA3", SUB_PARA3),
                  ("PROFILE", PROFILE)]
 
 dll = CDLL("MathDll.dll")
 para = PARAMETER()
+para.type = 1
 para.SUB_PARA1.nPara1 = 5
 para.SUB_PARA1.nPara2 = 1
 para.SUB_PARA2.nPara3 = 20

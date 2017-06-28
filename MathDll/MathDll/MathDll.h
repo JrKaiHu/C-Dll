@@ -5,7 +5,15 @@
 //	int nPara2;
 //}PARAMETER;
 
+typedef enum {
+	TYPE_1,
+	TYPE_2,
+	TYPE_3
+}TYPE;
+
 typedef struct tagPARAMETER {
+
+	TYPE type;
 
 	struct {
 		int nPara1;

@@ -117,6 +117,8 @@ BOOL CMathDllTestDlg::OnInitDialog()
 	memcpy(para.PROFILE.szAge, pszAge, strlen(pszAge));
 	para.PROFILE.szAge[strlen(pszAge)] = '\0';
 
+	para.type = TYPE_2;
+
 	int nRet = Add(para);
 
 	return TRUE;  // return TRUE  unless you set the focus to a control
