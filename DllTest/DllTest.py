@@ -33,4 +33,7 @@ para.SUB_PARA2.nPara4 = 17
 para.SUB_PARA3.nPara5 = 3
 para.SUB_PARA3.nPara6 = 9
 
+para.PROFILE.szName = b'Wolf'
+para.PROFILE.szAge = b'36'
+
 print(dll.Add(byref(para)))

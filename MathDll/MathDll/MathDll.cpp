@@ -10,8 +10,8 @@
 
 int Add(PARAMETER &para)
 {
-	printf("Name = \n", para.PROFILE.szName);
-	printf("Age  = \n", para.PROFILE.szAge);
+	printf("Name = %s\n", para.PROFILE.szName);
+	printf("Age  = %s\n", para.PROFILE.szAge);
 
 	OutputDebugStringA(para.PROFILE.szName);
 	OutputDebugStringA("\n");
