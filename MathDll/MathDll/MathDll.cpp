@@ -27,3 +27,8 @@ int Add(PARAMETER &para)
 		   para.SUB_PARA2.nPara3 + para.SUB_PARA2.nPara4 + 
 		   para.SUB_PARA3.nPara5 + para.SUB_PARA3.nPara6;
 }
+
+int Sub(int *pPara1, int *pPara2) {
+
+	return *pPara1 - *pPara2;
+}

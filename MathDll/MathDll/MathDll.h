@@ -38,3 +38,4 @@ typedef struct tagPARAMETER {
 }PARAMETER;
 
 extern "C" __declspec(dllexport) int Add(PARAMETER &para);
+extern "C" __declspec(dllexport) int Sub(int *pPara1, int *pPara2);

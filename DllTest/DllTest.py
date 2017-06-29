@@ -39,3 +39,8 @@ para.PROFILE.szName = b'Wolf'
 para.PROFILE.szAge = b'36'
 
 print(dll.Add(byref(para)))
+
+nPara1 = c_int(5)
+nPara2 = c_int(10)
+
+print(dll.Sub(byref(nPara1), byref(nPara2)))
