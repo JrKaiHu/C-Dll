@@ -1,22 +1,25 @@
 from ctypes import *
 
-import ctypes
 
 class SUB_PARA1(Structure):
     _fields_ = [ ("nPara1", c_int),
                  ("nPara2", c_int)]
 
+
 class SUB_PARA2(Structure):
     _fields_ = [ ("nPara3", c_int),
                  ("nPara4", c_int)]
+
 
 class SUB_PARA3(Structure):
     _fields_ = [ ("nPara5", c_int),
                  ("nPara6", c_int)]
 
+
 class PROFILE(Structure):
     _fields_ = [("szName", c_char * 20),
                 ("szAge", c_char * 20)]
+
 
 class PARAMETER(Structure):
     _fields_ = [ ("type", c_int),

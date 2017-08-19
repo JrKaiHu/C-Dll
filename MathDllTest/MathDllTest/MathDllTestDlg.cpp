@@ -119,7 +119,11 @@ BOOL CMathDllTestDlg::OnInitDialog()
 
 	para.type = TYPE_2;
 
+	OutputDebugStringA("MathDllTest +");
+
 	int nRet = Add(para);
+	OutputDebugStringA("MathDllTest -");
+
 
 	return TRUE;  // return TRUE  unless you set the focus to a control
 }

@@ -14,13 +14,15 @@ int Add(PARAMETER &para)
 	printf("Age  = %s\n", para.PROFILE.szAge);
 	printf("type  = %d\n", para.type);
 
-	char szDbgStr[16];
-	sprintf_s(szDbgStr, 16, "type  = %d\n", para.type);
+	char szDbgStr[256];	
 
-	OutputDebugStringA(para.PROFILE.szName);
-	OutputDebugStringA("\n");
-	OutputDebugStringA(para.PROFILE.szAge);
-	OutputDebugStringA("\n");
+	sprintf_s(szDbgStr, 256, "(MathDll) %s\n", para.PROFILE.szName);
+	OutputDebugStringA(szDbgStr);
+
+	sprintf_s(szDbgStr, 256, "(MathDll) %s\n", para.PROFILE.szAge);
+	OutputDebugStringA(szDbgStr);
+
+	sprintf_s(szDbgStr, 256, "(MathDll) type  = %d\n", para.type);
 	OutputDebugStringA(szDbgStr);
 
 	return para.SUB_PARA1.nPara1 + para.SUB_PARA1.nPara2 + 
